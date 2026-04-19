@@ -218,6 +218,21 @@ Relevant verses: ${PROBLEM_SOLVING_GUIDE.purpose.verses.join(', ')}
         content: response.choices[0].message.content || 'Sorry, I could not generate a response.',
       };
       setMessages((prev) => [...prev, assistantMessage]);
+
+      // Save message to database
+      try {
+        await fetch('/api/saveChatMessage', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userQuestion: input,
+            botResponse: assistantMessage.content,
+          }),
+        });
+      } catch (dbError) {
+        console.error('Failed to save message to database:', dbError);
+        // Don't show error to user, silently fail
+      }
     } catch (error) {
       console.error('Error calling Groq API:', error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
