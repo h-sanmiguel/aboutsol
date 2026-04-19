@@ -4,9 +4,6 @@
   "installCommand": "npm install",
   "framework": "vite",
   "outputDirectory": "dist",
-  "env": {
-    "VITE_GROQ_API_KEY": "@groq_api_key"
-  },
   "headers": [
     {
       "source": "/dist/(.*)",
