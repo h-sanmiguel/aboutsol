@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Home from './pages/Home'
 import Interests from './pages/Interests'
 import Moods from './pages/Moods'
@@ -17,6 +18,7 @@ function AppContent() {
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <FloatingChatBot />
+      <Analytics />
     </>
   )
 }
