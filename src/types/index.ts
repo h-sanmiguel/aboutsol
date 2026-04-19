@@ -23,6 +23,7 @@ export interface Interest {
 export interface BioData {
   name: string;
   bio: string;
+  relationship?: string;
   age?: number;
   birthday?: string;
   location?: string;

@@ -4,6 +4,7 @@ import type { BioData, Mood, Interest, GalleryItem } from '../types';
 export const BIO_DATA: BioData = {
   name: "Solea",
   bio: "Hi! I'm Jaja 💕 Welcome to my world!",
+  relationship: "In a relationship with Keii 💕",
   age: 22,
   birthday: "February 21, 2004",
   location: "Cagayan de Oro",
@@ -165,7 +166,7 @@ export const FAVORITE_SONGS = [
 ];
 
 // Dream Man Description
-export const DREAM_MAN = `Someone who is a man of God. Someone who feels like home without trying too hard. Gentle with my feelings, patient with my silence, and consistent even on my worst days. Doesn't just say he loves me but shows it in the small quiet ways. And lastly, respects my growth, supports my dreams, and never makes me feel like I'm too much or not enough. 💕`;
+export const DREAM_MAN = `My boyfriend is Keii 💕 He's someone who is a man of God. Someone who feels like home without trying too hard. Gentle with my feelings, patient with my silence, and consistent even on my worst days. He shows me he loves me in the small quiet ways. And he respects my growth, supports my dreams, and never makes me feel like I'm too much or not enough. He's everything I dreamed of and so much more. 💕`;
 
 // Gallery Items
 export const GALLERY_ITEMS: GalleryItem[] = [];

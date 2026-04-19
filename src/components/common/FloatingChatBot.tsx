@@ -34,6 +34,7 @@ You are a caring, supportive chatbot trained to help Eve with personal guidance,
 
 === ABOUT EVE ===
 Name: ${BIO_DATA.name}
+Relationship: ${BIO_DATA.relationship || 'Single'}
 Age: ${BIO_DATA.age}
 Location: ${BIO_DATA.location}
 Bio: ${BIO_DATA.bio}
