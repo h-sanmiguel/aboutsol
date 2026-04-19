@@ -3,6 +3,7 @@ import type { BioData, Mood, Interest, GalleryItem } from '../types';
 // Bio Data - Edit this with her information
 export const BIO_DATA: BioData = {
   name: "Solea",
+  nicknames: ["Jaja", "Eve"],
   bio: "Hi! I'm Jaja 💕 Welcome to my world!",
   relationship: "In a relationship with Keii 💕",
   age: 22,

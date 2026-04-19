@@ -22,6 +22,7 @@ export interface Interest {
 // Bio/Profile types
 export interface BioData {
   name: string;
+  nicknames?: string[];
   bio: string;
   relationship?: string;
   age?: number;
