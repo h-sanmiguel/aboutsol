@@ -1,0 +1,21 @@
+@keyframes float-up {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100vh) translateX(100px);
+  }
+}
+
+.floating-hearts-container {
+  z-index: 0;
+}
+
+.floating-heart {
+  user-select: none;
+}
