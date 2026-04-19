@@ -23,6 +23,9 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-pink-600 mb-4">💭 About Sol</h2>
               <div className="space-y-4 text-gray-700">
                 <p><strong>Your Name:</strong> {BIO_DATA.name}</p>
+                {BIO_DATA.nicknames && BIO_DATA.nicknames.length > 0 && (
+                  <p><strong>Your Nicknames:</strong> {BIO_DATA.nicknames.join(', ')}</p>
+                )}
                 {BIO_DATA.birthday && <p><strong>Your Birthday:</strong> {BIO_DATA.birthday}</p>}
                 {BIO_DATA.age && <p><strong>Your Age:</strong> {BIO_DATA.age}</p>}
                 {BIO_DATA.location && <p><strong>Your Home:</strong> {BIO_DATA.location}</p>}
