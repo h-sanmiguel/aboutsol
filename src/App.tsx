@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Interests from './pages/Interests'
 import Moods from './pages/Moods'
 import Gallery from './pages/Gallery'
+import Admin from './pages/Admin'
 import { FloatingChatBot } from './components/common/FloatingChatBot'
 import './App.css'
 
@@ -16,6 +17,7 @@ function AppContent() {
         <Route path="/interests" element={<Interests />} />
         <Route path="/moods" element={<Moods />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
       <FloatingChatBot />
       <Analytics />
